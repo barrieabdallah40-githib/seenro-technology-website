@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEENRO Core | SEENRO Technology</title>
+<meta name="description" content="SEENRO Core is our Rust and Axum backend project. Current status: working locally, not yet deployed.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">SEENRO</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="core.html" aria-current="page">SEENRO Core</a>
+    <a href="security-ai.html">Security &amp; AI</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <p class="eyebrow">SEENRO Core</p>
+  <h1>A backend platform we are building from the ground up.</h1>
+  <p class="lead">SEENRO Core is a backend written in Rust with Axum and SQLite. It is under active development and runs on a development machine. It is not yet deployed to the public internet, and there is no public API to connect to.</p>
+</section>
+<section>
+  <h2>Working locally <span class="tag tag-local">Tested</span></h2>
+  <ul>
+    <li>Account registration and login, with passwords hashed using Argon2.</li>
+    <li>Session tokens that expire, are stored hashed, and can be revoked at logout.</li>
+    <li>Private per-user notes, as a first example of user-owned data.</li>
+    <li>Rate limiting on login and registration, plus a growing delay after repeated failed logins.</li>
+    <li>Request size limits and an automated test suite covering these features.</li>
+  </ul>
+</section>
+<section>
+  <h2>In development <span class="tag tag-planned">In development</span></h2>
+  <ul>
+    <li>Deployment on a small server with HTTPS and a reverse proxy.</li>
+    <li>Per-user limits and pagination for stored data.</li>
+    <li>Monitoring and backups.</li>
+  </ul>
+</section>
+<section>
+  <h2>Planned <span class="tag tag-planned">Planned</span></h2>
+  <ul>
+    <li>A public API for developers.</li>
+    <li>Documentation with example requests and responses.</li>
+    <li>A service status page.</li>
+    <li>A way to report bugs and request features.</li>
+  </ul>
+  <p>We update this page as things change. Source code and documentation will be linked here when they are ready to publish.</p>
+</section>
+</main>
+<footer>
+  <p>© SEENRO Technology. An early-stage project; nothing here is a finished product.</p>
+</footer>
+</body>
+</html>
