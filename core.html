@@ -3,65 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SEENRO Core | SEENRO Technology</title>
-<meta name="description" content="SEENRO Core infrastructure is deployed and online. Backend development and public developer access are ongoing.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Explore the early-access SEENRO Core backend foundation and developer portal.">
+<meta name="theme-color" content="#07110f">
+<title>SEENRO Core | Backend Infrastructure</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0b6b4f">
+<link rel="stylesheet" href="style.css">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SEENRO Technology">
-<meta property="og:title" content="SEENRO Core | SEENRO Technology">
-<meta property="og:description" content="SEENRO Core infrastructure is deployed and online. Backend development and public developer access are ongoing.">
-<meta property="og:url" content="https://barrieabdallah40-githib.github.io/seenro-technology-website/core.html">
+<meta property="og:title" content="SEENRO Core | Backend Infrastructure">
+<meta property="og:description" content="Explore the early-access SEENRO Core backend foundation and developer portal.">
+<meta property="og:url" content="https://seenrotech.com/core.html">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="index.html">SEENRO</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="core.html" aria-current="page">SEENRO Core</a>
-    <a href="security-ai.html">Security &amp; AI</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<a class="brand" href="index.html">SEENRO<small>TECHNOLOGY</small></a>
+<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="core.html" aria-current="page">SEENRO Core</a><a href="security-ai.html">Security &amp; AI</a><a href="contact.html">Contact</a><a class="nav-portal" href="https://developers.seenrotech.com">Developer Portal</a></nav>
 </header>
 <main>
-<section class="hero">
-  <p class="eyebrow">SEENRO Core</p>
-  <h1>SEENRO Core is deployed. The platform is growing.</h1>
-  <p class="lead">SEENRO Core is built with Rust, Axum and SQLite. Its backend infrastructure is deployed and online. The core platform remains under active development; public developer APIs and general integration access are not yet available.</p>
-</section>
-<section>
-  <h2>Core backend <span class="tag tag-local">Infrastructure online</span></h2>
-  <ul>
-    <li>Account registration and login, with passwords hashed using Argon2.</li>
-    <li>Session tokens that expire, are stored hashed, and can be revoked at logout.</li>
-    <li>Private per-user notes, as a first example of user-owned data.</li>
-    <li>Rate limiting on login and registration, plus a growing delay after repeated failed logins.</li>
-    <li>Request size limits and an automated test suite covering these features.</li>
-  </ul>
-</section>
-<section>
-  <h2>In development <span class="tag tag-planned">In development</span></h2>
-  <ul>
-    <li>Production hardening and preparation for public developer access.</li>
-    <li>Per-user limits and pagination for stored data.</li>
-    <li>Monitoring and backups.</li>
-  </ul>
-</section>
-<section>
-  <h2>Coming soon <span class="tag tag-planned">Coming soon</span></h2>
-  <ul>
-    <li>Public Developer API and project management tools.</li>
-    <li>Documentation with example requests and responses.</li>
-    <li>A service status page.</li>
-    <li>A way to report bugs and request features.</li>
-  </ul>
-  <p>Developers and early technical collaborators are welcome to contact us. API access, developer documentation and additional services will be announced as they become available.</p>
-</section>
+<section class="hero"><p class="eyebrow">SEENRO Core · Early access</p><h1>A backend foundation for <span>your next project.</span></h1><p class="lead">SEENRO Core is the deployed foundation of the SEENRO developer platform. It provides developer identity, project management, scoped credentials, project data operations and an initial project storage API.</p><div class="actions"><a class="button" href="https://developers.seenrotech.com">Open Developer Portal</a><a class="button secondary" href="https://developers.seenrotech.com/docs.html">API documentation</a></div></section>
+<section class="section"><p class="eyebrow">Current foundation</p><h2>What is available</h2><ul class="status-list"><li><span>Developer registration, login and session management</span><span class="tag">Core integration</span></li><li><span>Project creation and listing</span><span class="tag">Available</span></li><li><span>Project-bound developer API keys and supported scopes</span><span class="tag">Available</span></li><li><span>Project-scoped collection and record operations</span><span class="tag">Available</span></li><li><span>Project storage routes and usage endpoints</span><span class="tag">Integration verification required</span></li><li><span>Businesses, AI and Automation APIs</span><span class="tag tag-planned">Planned</span></li></ul><p class="muted">Availability of a route does not mean every external integration has passed live end-to-end testing. Check the documentation for current limitations.</p></section>
+<section class="section"><p class="eyebrow">Security model</p><h2>Credentials have distinct roles.</h2><div class="grid"><article class="panel"><h3>Developer sessions</h3><p>Used by the portal to manage the signed-in developer's projects and credentials.</p></article><article class="panel"><h3>Developer API keys</h3><p>Project-bound secrets intended for trusted server-to-server integrations. Never expose them in browser or mobile application code.</p></article><article class="panel"><h3>Storage keys</h3><p>Separate project storage credentials with their own management and authentication contract.</p></article></div></section>
+<section class="section"><p class="eyebrow">Storage</p><h2>Project file storage</h2><p class="section-intro">The documented foundation includes a shared 100 MiB free account allocation and project-specific paid capacity. Current file limits, video requirements, pricing and payment safeguards are maintained in the live documentation.</p><a class="panel-link" href="https://developers.seenrotech.com/docs.html#storage">Storage API details →</a></section>
+<section class="section"><div class="callout"><p class="eyebrow">Developer resources</p><h2>Start with the documentation.</h2><p class="muted">Review confirmed endpoints, credential guidance, storage limits and known integration constraints before building against Core.</p><div class="actions"><a class="button" href="https://developers.seenrotech.com/docs.html">Read documentation</a><a class="button secondary" href="https://developers.seenrotech.com">Developer Portal</a></div></div></section>
 </main>
-<footer>
-  <p>© SEENRO Technology. An early-stage project; nothing here is a finished product.</p>
-</footer>
+<footer><a href="index.html">SEENRO Technology</a><span>Independent technology company · Sierra Leone</span><span>ABDALLAH BARRIE · Founder &amp; CEO</span><span>© 2026 SEENRO Technology</span></footer>
 </body>
 </html>
