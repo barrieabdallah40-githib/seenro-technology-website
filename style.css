@@ -90,3 +90,10 @@ footer a { color: var(--text); text-decoration: none; }
   .founder-mark { min-height: 180px; }
   .status-list li { flex-direction: column; gap: 7px; }
 }
+
+/* Temporarily hide Developer Portal entry points.
+   Original HTML links are preserved for future restoration. */
+.nav-portal,
+a.button[href="https://developers.seenrotech.com"] {
+  display: none !important;
+}
