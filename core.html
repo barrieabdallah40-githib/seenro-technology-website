@@ -1,31 +1,140 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore the early-access SEENRO Core backend foundation and developer portal.">
-<meta name="theme-color" content="#07110f">
-<title>SEENRO Core | Backend Infrastructure</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="SEENRO Technology">
-<meta property="og:title" content="SEENRO Core | Backend Infrastructure">
-<meta property="og:description" content="Explore the early-access SEENRO Core backend foundation and developer portal.">
-<meta property="og:url" content="https://seenrotech.com/core.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SEENRO provides Backend-as-a-Service for developers, powered by SEENRO Core. Explore project management, scoped credentials, data APIs and the platform's current capabilities.">
+  <meta name="theme-color" content="#07110f">
+  <title>SEENRO Backend-as-a-Service | SEENRO Technology</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SEENRO Technology">
+  <meta property="og:title" content="SEENRO Backend-as-a-Service | SEENRO Technology">
+  <meta property="og:description" content="SEENRO BaaS provides developer accounts, project management, scoped credentials and project data operations, powered by SEENRO Core.">
+  <meta property="og:url" content="https://seenrotech.com/core.html">
 </head>
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">SEENRO<small>TECHNOLOGY</small></a>
-<nav aria-label="Main navigation"><a href="index.html">Home</a><a href="solutions.html">Solutions</a><a href="about.html">About</a><a href="core.html" aria-current="page">SEENRO Core</a><a href="security-ai.html">Security &amp; AI</a><a href="contact.html">Contact</a><a class="nav-portal" href="https://developers.seenrotech.com">Developer Portal</a></nav>
-</header>
-<main>
-<section class="hero"><p class="eyebrow">SEENRO Core · Early access</p><h1>A backend foundation for <span>your next project.</span></h1><p class="lead">SEENRO Core is part of SEENRO Technology's wider software and infrastructure ecosystem. It is the early-access backend foundation for developers building digital products. It provides developer identity, project management, scoped credentials, project data operations and an initial project storage API.</p><div class="actions"><a class="button" href="https://developers.seenrotech.com">Open Developer Portal</a><a class="button secondary" href="https://developers.seenrotech.com/docs.html">API documentation</a></div></section>
-<section class="section"><p class="eyebrow">Current foundation</p><h2>What is available</h2><ul class="status-list"><li><span>Developer registration, login and session management</span><span class="tag">Core integration</span></li><li><span>Project creation and listing</span><span class="tag">Available</span></li><li><span>Project-bound developer API keys and supported scopes</span><span class="tag">Available</span></li><li><span>Project-scoped collection and record operations</span><span class="tag">Available</span></li><li><span>Project storage routes and usage endpoints</span><span class="tag">Integration verification required</span></li><li><span>Businesses, AI and Automation APIs</span><span class="tag tag-planned">Planned</span></li></ul><p class="muted">Availability of a route does not mean every external integration has passed live end-to-end testing. Check the documentation for current limitations.</p></section>
-<section class="section"><p class="eyebrow">Security model</p><h2>Credentials have distinct roles.</h2><div class="grid"><article class="panel"><h3>Developer sessions</h3><p>Used by the portal to manage the signed-in developer's projects and credentials.</p></article><article class="panel"><h3>Developer API keys</h3><p>Project-bound secrets intended for trusted server-to-server integrations. Never expose them in browser or mobile application code.</p></article><article class="panel"><h3>Storage keys</h3><p>Separate project storage credentials with their own management and authentication contract.</p></article></div></section>
-<section class="section"><p class="eyebrow">Storage</p><h2>Project file storage</h2><p class="section-intro">The storage API includes documented object operations, upload and download routes, and usage endpoints. Check the live documentation for current file limits, supported file types and integration status. Some external workflows may still require end-to-end verification.</p><a class="panel-link" href="https://developers.seenrotech.com/docs.html#storage">Storage API details →</a></section>
-<section class="section"><div class="callout"><p class="eyebrow">Developer resources</p><h2>Start with the documentation.</h2><p class="muted">Review confirmed endpoints, credential guidance, storage limits and known integration constraints before building against Core.</p><div class="actions"><a class="button" href="https://developers.seenrotech.com/docs.html">Read documentation</a><a class="button secondary" href="https://developers.seenrotech.com">Developer Portal</a></div></div></section>
-</main>
-<footer><a href="index.html">SEENRO Technology</a><span>Independent technology company · Sierra Leone</span><span>ABDALLAH BARRIE · Founder &amp; CEO</span><span>© 2026 SEENRO Technology</span></footer>
+  <header class="site-header">
+    <a class="brand" href="index.html">SEENRO<small>TECHNOLOGY</small></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="about.html">About</a>
+      <a href="core.html" aria-current="page">SEENRO BaaS</a>
+      <a href="security-ai.html">Security &amp; AI</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-portal" href="https://developers.seenrotech.com">Developer Portal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SEENRO Backend-as-a-Service</p>
+      <h1>Build your applications. <span>We'll power the backend.</span></h1>
+      <p class="lead">SEENRO provides Backend-as-a-Service (BaaS) for developers. Powered by SEENRO Core, the platform brings together developer accounts, project management, scoped credentials and project data operations. It is one of SEENRO Technology's services, built to help developers create digital products without building every backend foundation themselves.</p>
+      <div class="actions">
+        <a class="button" href="https://developers.seenrotech.com">Get started with SEENRO</a>
+        <a class="button secondary" href="https://developers.seenrotech.com/docs.html">API documentation</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">One of SEENRO's services</p>
+      <h2>Backend infrastructure for developers.</h2>
+      <p class="section-intro">SEENRO is an independent technology company working across software and digital systems. BaaS is one of its services. SEENRO Core is the underlying platform that powers these backend capabilities.</p>
+      <div class="grid">
+        <article class="panel">
+          <h3>Developer accounts</h3>
+          <p>Register, sign in and manage developer access through the SEENRO developer platform.</p>
+        </article>
+        <article class="panel">
+          <h3>Projects and credentials</h3>
+          <p>Create and manage projects, with project-bound developer credentials and supported access scopes.</p>
+        </article>
+        <article class="panel">
+          <h3>Project data</h3>
+          <p>Use project-scoped collection and record operations through the backend API.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Current platform capabilities</p>
+      <h2>What the platform supports today.</h2>
+      <p class="section-intro">The following describes the capabilities implemented in the current SEENRO Core codebase. Individual integrations and operational limits should always be checked against the current developer documentation.</p>
+      <div class="grid">
+        <article class="panel">
+          <h3>Developer authentication</h3>
+          <p>Developer registration, login, session management and account access are implemented in Core.</p>
+        </article>
+        <article class="panel">
+          <h3>Project management</h3>
+          <p>Developers can create and list projects and use project-bound credentials to access supported capabilities.</p>
+        </article>
+        <article class="panel">
+          <h3>API keys and scopes</h3>
+          <p>Developer API keys are associated with projects and support defined permissions for supported API operations.</p>
+        </article>
+        <article class="panel">
+          <h3>Collection and record operations</h3>
+          <p>Project-scoped data operations are implemented for working with application collections and records.</p>
+        </article>
+        <article class="panel">
+          <h3>Storage metadata and usage</h3>
+          <p>Storage-related metadata and usage operations are present. These should not be interpreted as confirmation that complete file upload and download functionality is available.</p>
+        </article>
+        <article class="panel">
+          <h3>Direct file uploads</h3>
+          <p>Complete direct file-upload and download functionality is not advertised as currently available. Developers should not depend on it until the relevant handlers and end-to-end integration have been implemented and verified.</p>
+        </article>
+      </div>
+      <p class="notice">An implemented API route does not automatically mean every external integration or end-to-end workflow has been verified. Consult the current documentation for supported endpoints, limitations and integration requirements.</p>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Under development and planned</p>
+      <h2>A platform designed to grow.</h2>
+      <div class="grid">
+        <article class="panel">
+          <h3>SEENRO Studio</h3>
+          <p>SEENRO Studio is under development as an AI-powered website and full web-application builder.</p>
+        </article>
+        <article class="panel">
+          <h3>Expanded storage</h3>
+          <p>Further storage capabilities, including complete file handling and associated integrations, require implementation and verification before being presented as available.</p>
+        </article>
+        <article class="panel">
+          <h3>Additional API groups</h3>
+          <p>Broader Business, AI and Automation API capabilities are part of the development direction, not services to assume are currently available.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Security</p>
+      <h2>Designed with project separation in mind.</h2>
+      <p class="section-intro">SEENRO Core uses project-bound credentials and scoped access controls to help separate application resources. Developer secret API keys are intended for trusted server-side use only. Never expose secret keys in public browser code, mobile applications, client-side bundles or public repositories. Use only the credentials and permissions appropriate to each integration.</p>
+    </section>
+
+    <section class="section">
+      <div class="callout">
+        <p class="eyebrow">Start building</p>
+        <h2>Put SEENRO behind your next application.</h2>
+        <p class="muted">Explore the developer platform and documentation to understand the current capabilities, supported endpoints and integration requirements.</p>
+        <div class="actions">
+          <a class="button" href="https://developers.seenrotech.com">Open Developer Portal</a>
+          <a class="button secondary" href="https://developers.seenrotech.com/docs.html">Read the documentation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="index.html">SEENRO Technology</a>
+    <span>Software · Backend-as-a-Service · Digital Infrastructure</span>
+    <span>ABDALLAH BARRIE · Founder &amp; CEO</span>
+    <span>© 2026 SEENRO Technology</span>
+  </footer>
 </body>
 </html>
