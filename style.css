@@ -97,3 +97,21 @@ footer a { color: var(--text); text-decoration: none; }
 a.button[href="https://developers.seenrotech.com"] {
   display: none !important;
 }
+
+/* Broader SEENRO company positioning */
+.notice {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border: 1px solid rgba(190,224,207,.2);
+  border-radius: 14px;
+  background: rgba(165,185,175,.07);
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.7;
+}
+nav a { transition: color .2s ease; }
+.panel { transition: border-color .2s ease, transform .2s ease; }
+.panel:hover { border-color: rgba(69,214,160,.35); }
+@media (max-width: 580px) {
+  .notice { padding: 15px; }
+}
